@@ -16,8 +16,7 @@ public class Sample {
 		String input2 = sc.next();
 
 		
-		try {
-			//db connection opened..
+			try{
 			System.out.println("begin");
 			int a = Integer.parseInt(input1);
 
@@ -25,20 +24,18 @@ public class Sample {
 			int c = a / b;
 			
 			System.out.println(c);
+			}catch(ArithmeticException ae){
+				System.out.println("donot give zero second..value");
+			}
+			catch(Exception e){
+				System.out.println("oops.. something wrong.. please try again...");
+				e.printStackTrace();
+				//System.out.println(e);
+			}
 			
-			
-		} catch (ArithmeticException ae) {
-			System.out.println("donot give zero for second value");
-		}catch(NumberFormatException ne){
-			System.out.println("donot give alphabets.. please give only numbers...");
-		}
-		finally{
-			System.out.println("end...");
-		}
+		
+		
 
-		/*
-		 * int []a={10,20}; System.out.println(a[2]);
-		 */
 
 	}
 
