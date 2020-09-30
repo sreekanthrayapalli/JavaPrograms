@@ -13,7 +13,7 @@ public class Sample {
 			String []sp = s.split(" ");
 			for(int i=0;i<sp.length;i++){
 				System.out.println(sp[i]);
-				//done
+				//done  ok..
 			}
 			
 			StringTokenizer st = new StringTokenizer(s,",");
